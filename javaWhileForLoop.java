@@ -21,6 +21,7 @@ for (statement 1; statement 2; statement 3) {
 }
 
 */
+
 public class javaWhileForLoop {
 	public static void main(String[] args){
 		int i = 0;
@@ -30,7 +31,7 @@ public class javaWhileForLoop {
 		}
 		System.out.println("==");
 		// ====================================
-		
+
 
 		int a = 0;
 		do {
