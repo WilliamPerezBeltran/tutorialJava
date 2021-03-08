@@ -69,10 +69,5 @@ public class javaIfElse {
 		int time2 = 20;
 		String result = (time2 < 18) ? "Good day." : "Good evening.";
 		System.out.println(result);
-
-
-
-
-
 	}
 }
