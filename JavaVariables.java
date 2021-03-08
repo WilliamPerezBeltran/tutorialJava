@@ -1,6 +1,6 @@
-// cocmentari
-/*multi lines 
-de la z a la z
+// comment
+/*
+multi lines comments 
 */
 
 public class JavaVariables {
