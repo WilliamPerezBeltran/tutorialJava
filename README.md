@@ -27,7 +27,9 @@ $ javac <file_name.java>
 # Execute program
 $ java <file_name>
 ```
-
+|CONCEPTS|video|reading
+|--|--|--|
+|Abstract class|[Abstract class](https://www.youtube.com/watch?v=WRE3BbXPZNY&t=216s&ab_channel=FernandoHerrera)|
 ## Creators
 
 **William Pérez**
