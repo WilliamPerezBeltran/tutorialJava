@@ -1,12 +1,27 @@
-// public class MyParentClass{
-// 	public void justaMethod(){
-// 		System.out.println("Parent class method");
-// 	}
-// }
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 
-// public class MyChildClass extends MyParentClass {
-// 	@Override
-// 	public void justaMethod(){
-// 		System.out.println("Child class method");
-// 	}
-// }
+
+// se inspecciona con esta libreria retention
+@Retention(RetentionPolicy.RUNTIME)
+@interface Myannotation{
+	String value default "";
+	String name;
+	int age();
+	String[] newNames;
+}
+
+@Myannotation(name="pepito",value="123",age=37,newNames={"Jenkov", "Peterson"});
+public class MyClass {
+
+
+}
+
+
+public class ExampleAnnotation {
+    public static void main(String[] args) {
+        new MyClass()
+    }
+}
+
+
