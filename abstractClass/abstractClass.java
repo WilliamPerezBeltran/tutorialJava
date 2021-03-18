@@ -1,32 +1,37 @@
 /*
-Obligar a otros desarrolladores que cuando implementen una clase abstracta
-tiene que cumplir las caracteristicas implementadas en la clase abastracta.
-Es decir, obliga a la creación de una objecto con las caracteristicas que tenga la clase abstracta 
+explication: 
+https://www.youtube.com/watch?v=WRE3BbXPZNY&t=216s&ab_channel=FernandoHerrera
 */
 
-/*
-Force other developers that when implementing an abstract class
-it has to fulfill the characteristics implemented in the abastracta class.
-That is, it forces the creation of an object with the characteristics that the abstract class has
-*/
-abstract class Animal{
-	int patas;
-	public abstract void emitirSonido();
+
+// Code from filename: Main.java
+// abstract class
+abstract class Animal {
+  public String fname = "John";
+  public int patas;
+  public abstract void emitirSonido(); // abstract method
 }
 
-class Perro extends Animal{
-	int patas;
-	int colas;
-	public void emitirSonido(){
-		System.out.println("emite WOUUU");	
-	}
+// Subclass (inherit from Main)
+class Perro extends Animal {
+  public int cola ;
+  public void emitirSonido() { // the body of the abstract method is provided here
+    System.out.println("Wowww");
+  }
 }
+// End code from filename: Main.java
 
-class abstractClass{
-	public static void main(String[] args){
-		Perro myObj = new Perro();
-		myObj.emitirSonido();
-		myObj.patas = 4;
-		System.out.println(myObj.patas);
-	}
+// Code from filename: Second.java
+class abstractClass {
+  public static void main(String[] args) {
+    // create an object of the Student class (which inherits attributes and methods from Main)
+    Perro myObj = new Perro();
+
+    myObj.cola = 1;
+    myObj.patas = 4;
+    System.out.println("fname: " + myObj.fname);
+    System.out.println("cola: " + myObj.cola);
+    System.out.println("patas: " + myObj.patas);
+    myObj.emitirSonido();
+  }
 }
