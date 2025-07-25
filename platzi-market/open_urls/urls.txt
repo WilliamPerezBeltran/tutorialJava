@@ -1,0 +1,5 @@
+https://spring.io/quickstart
+https://start.spring.io/
+https://platzi.com/home/clases/1996-java-spring/31501-que-es-jpa/
+https://docs.spring.io/spring-boot/appendix/application-properties/index.html
+https://introcs.cs.princeton.edu/java/11hello/
